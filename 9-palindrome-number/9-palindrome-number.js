@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 var isPalindrome = function(x) {
-    let reverseNumber = parseInt(x.toString().split('').reverse().join(''))
+    let reverseNumber = Number(x.toString().split('').reverse().join(''))
     if (reverseNumber === x) {
         return true
     }
