@@ -4,7 +4,7 @@ class Solution:
         # Time Complexity: O(n)
         # Memory Complexity: O(n) -> adding a hashmap
         
-        prevMap = {} # val -> index
+        prevMap = {} #val -> index
         
         for index, number in enumerate(nums):
             diff = target - number
