@@ -4,11 +4,13 @@ class Solution:
         prevMap = {} # val : index
         
         for index, number in enumerate(nums):
+            
             diff = target - number
             
             if diff in prevMap:
-                return[prevMap[diff], index]
+                return [prevMap[diff], index]
             
-            prevMap[number] = index            
+            prevMap[number] = index
+            
         return
         
